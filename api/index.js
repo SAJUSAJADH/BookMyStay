@@ -11,12 +11,12 @@ const cookieParser = require('cookie-parser');
 const axios = require("axios");
 const authenticateJWT = require('./middleware/authMiddleware');
 const admin = require("firebase-admin");
-const firebaseconfig = require("./firebaseconfig"); 
+const serviceAccount = require("./bookmystay-393513-firebase-adminsdk-1gpn3-081d864f4a.json"); 
 const path = require('path');
 
 
 admin.initializeApp({
-  credential: admin.credential.cert(firebaseconfig),
+  credential: admin.credential.cert(serviceAccount),
   storageBucket: "bookmystay-393513.appspot.com",
 });
 
