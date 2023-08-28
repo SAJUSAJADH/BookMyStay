@@ -54,7 +54,7 @@ export default function Trend(){
     return(
         <div className="container mx-auto pt-4 p-2 md:p-6">
             <h2 className="font-bold text-2xl font-sans">Explore India</h2>
-            <p className="font-semibold text-lg font-sans">These popular destinations have a lot to offer</p>
+            <p className="lg:font-semibold text-lg font-sans">These popular destinations have a lot to offer</p>
             <Carousel className="md:p-6" responsive={responsive}>
                 <div><img onClick={HandlePlace} name="goa" className='rounded cursor-pointer' src={goa} alt=''/><h5 className="font-bold font-sans text-lg p-2">Goa</h5></div>
                 <div><img onClick={HandlePlace} name="lonavala" className='rounded cursor-pointer' src={lonavala} alt=''/><h5 className="font-bold font-sans text-lg p-2">Lonavala</h5></div>

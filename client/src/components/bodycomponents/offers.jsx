@@ -9,7 +9,7 @@ export default function Offercard(){
             <h2 className="font-sans font-bold text-2xl">
                 Offers
             </h2>
-            <p className="font-sans font-semibold text-lg p-2">Promotions, deals, and special offers for you</p>
+            <p className="font-sans lg:font-semibold text-lg p-2">Promotions, deals, and special offers for you</p>
             <div className="grid lg:grid-cols-2 gap-4 ">
                 <div className="grid grid-cols-2 bg-white font-sans z-40 shadow-lg t md:h-3/5 offercard">
                     <div className="p-2 md:p-6">

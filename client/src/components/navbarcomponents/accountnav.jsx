@@ -6,14 +6,17 @@ import avatar from "../images/defaultavatar.jpg"
 import LanguageDropdown from "./languagedropdown";
 import CurrencyDropdown from "./currencydropdown";
 import AccountDropdown from "./accountdropdown";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 export default function Accountnav(){
 
-    const {user} = useContext(UserContext);
+    const {user,setUser} = useContext(UserContext);
 
     const [isToggle, setIstoggle] = useState(false);
+
+    const navigate = useNavigate();
 
     
     const menus = [

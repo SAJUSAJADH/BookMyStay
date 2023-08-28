@@ -45,7 +45,7 @@ export default function Allplaces(){
     return(
         <div className="pt-14 lg:container lg:mx-auto p-2 md:p-6 ">
             <h2 className="font-bold font-sans text-2xl">Stay at our top unique properties</h2>
-            <p className="font-semibold text-lg font-sans pb-4">From castles and villas to boats and igloos, we have it all</p>
+            <p className="lg:font-semibold text-lg font-sans pb-4">From castles and villas to boats and igloos, we have it all</p>
             <Carousel className="md:p-6" responsive={responsive}>
                 {places.map((place,index)=>(
                     <div onClick={()=>{navigate(`/account/book/${place._id}`)}} className="mx-2" key={index}>
