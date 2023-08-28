@@ -44,11 +44,11 @@ export default function Signin(){
                         <div className="">
                         <h2 className="text-xl font-bold font-sans my-6">Sign in </h2>
                         <label className="text-base font-semibold font-sans">Email address</label><br/>
-                        <input value={email} onChange={ev=>setEmail(ev.target.value)} type='email' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-11 bg-[#f2f2f2] " placeholder='youremail@example.com'></input><br/>
+                        <input value={email} onChange={ev=>setEmail(ev.target.value)} type='email' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-2 lg:px-11 bg-[#f2f2f2] " placeholder='youremail@example.com'></input><br/>
                         <label className="text-base font-semibold font-sans">Password</label><br/>
-                        <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-11 bg-[#f2f2f2] " placeholder='password'></input>
+                        <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2px-2 lg:px-11 bg-[#f2f2f2] " placeholder='password'></input>
                         <div className="my-4 w-full flex justify-center">
-                            <Link href="" onClick={Submit}  className="px-14 py-3 bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Sign in</Link>
+                            <Link href="" onClick={Submit}  className="px-4 lg:px-14 py-3 bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Sign in</Link>
                         </div>
                         {/*<Auth/>*/}
                         </div>

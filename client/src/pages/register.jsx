@@ -85,12 +85,12 @@ import Auth from "../components/bodycomponents/auth";
                 {page === 0 ? <>
                     <h2 className="text-xl font-bold font-sans my-6">Create an account</h2>
                         <label className="text-base font-semibold font-sans">Email address</label><br/>
-                        <input value={username} onChange={ev=>{setUsername(ev.target.value)}} type='email' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-11 bg-[#f2f2f2] " placeholder='youremail@example.com'></input>
+                        <input value={username} onChange={ev=>{setUsername(ev.target.value)}} type='email' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-2 lg:px-11 bg-[#f2f2f2] " placeholder='youremail@example.com'></input>
                         {isValid && <div className="flex justify-center">
                             <p className="text-blue">Invalid Email address</p>
                         </div>}
                         <div className="my-4 w-full flex justify-center">
-                            <Link href="#" onClick={HandleClick} className="px-14 py-3  hover:bg-orange bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Continue with email</Link>
+                            <Link href="#" onClick={HandleClick} className="px-4 lg:px-14 py-3  hover:bg-orange bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Continue with email</Link>
                         </div>
                         {/*<Auth/>*/}
                         </>
@@ -98,9 +98,9 @@ import Auth from "../components/bodycomponents/auth";
                         <>
                             <h2 className="text-xl font-bold font-sans my-6">Create password</h2>
                             <label className="text-base font-semibold font-sans">Password</label><br/>
-                            <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-11 bg-[#f2f2f2] " placeholder='Enter a password'></input><br/>
+                            <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2px-2 lg:px-11 bg-[#f2f2f2] " placeholder='Enter a password'></input><br/>
                             <label className="text-base font-semibold font-sans">Confirm password</label><br/>
-                            <input value={confirmPassword} onChange={ev=>setConfirmPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-11 bg-[#f2f2f2] " placeholder='Confirm your password'></input>
+                            <input value={confirmPassword} onChange={ev=>setConfirmPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-2 lg:px-11 bg-[#f2f2f2] " placeholder='Confirm your password'></input>
                             {validPassword && <div className="flex justify-center">
                             <p className="text-orange">Password is weak</p>
                             </div>}
@@ -115,7 +115,7 @@ import Auth from "../components/bodycomponents/auth";
                                     <p className="text-orange">This email is already registered</p>
                                     </div>}
                             <div className="my-4 w-full flex justify-center">
-                                <Link href="/" onClick={Submit} className="px-14 py-3 bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Create account</Link>
+                                <Link href="/" onClick={Submit} className="px-4 lg:px-14 py-3 bg-blue opacity-95 text-white hover:opacity-100 rounded hover:shadow-xl font-bold ">Create account</Link>
                             </div>  
                         </>
                 }
