@@ -28,11 +28,11 @@ export default function Allplaces(){
         },
         tablet: {
           breakpoint: { max: 800, min: 464 },
-          items: 4
+          items: 2
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 4
+          items: 2
         }
       };
 

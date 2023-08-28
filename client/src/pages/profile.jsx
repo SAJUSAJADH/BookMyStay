@@ -93,7 +93,7 @@ export default function Profile(){
 
             { subpage === 'profile' &&
                 <div className="container mx-auto p-6">
-                <h2 className="font-sans font-bold text-4xl">Account Settings</h2>
+                <h2 className="font-sans font-bold text-4xl text-center lg:text-start">Account Settings</h2>
                 <div className="container mx-auto py-4 z-30 shadow-2xl mt-12">
                     <div className="grid lg:grid-cols-4 sm:grid-cols-2 space-x-16">
                         <div className="pt-12">

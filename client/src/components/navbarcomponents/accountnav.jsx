@@ -31,6 +31,12 @@ export default function Accountnav(){
         setIstoggle(!isToggle)
     }
 
+    const handleOptionClick = async () => {
+        await axios.post('/logout').then(()=>{
+          setUser(null);
+          navigate('/');
+        })
+      }
     
     return(
         <nav className="bg-blue relative container-fluid mx-auto p-6 z-50">
@@ -58,6 +64,7 @@ export default function Accountnav(){
                         {menus.map((menu,index)=>(
                             <a key={index} href={menu.href}>{menu.name}</a>
                         ))}
+                        <p onClick={handleOptionClick} >Logout</p>
                      </div>
                 </div>
         </nav>
