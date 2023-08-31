@@ -68,7 +68,7 @@ import Auth from "../components/bodycomponents/auth";
         console.log(data)
         if(data.email === username){
             alert('registration successfull please login')
-            router('/login');
+            router('/signin');
         }else{
             alert("registration failed")
         }
