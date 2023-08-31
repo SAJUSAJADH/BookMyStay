@@ -67,12 +67,13 @@ import Auth from "../components/bodycomponents/auth";
         const {data} = await axios.post('/register',{username, password})
         console.log(data)
         if(data.email === username){
-            router('/account');
+            alert('registration successfull please login')
+            router('/login');
         }else{
             alert("registration failed")
         }
     }catch(error){
-        console.log(res)
+        console.log(error)
     }
   }
 
@@ -98,7 +99,7 @@ import Auth from "../components/bodycomponents/auth";
                         <>
                             <h2 className="text-xl font-bold font-sans my-6">Create password</h2>
                             <label className="text-base font-semibold font-sans">Password</label><br/>
-                            <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2px-2 lg:px-11 bg-[#f2f2f2] " placeholder='Enter a password'></input><br/>
+                            <input value={password} onChange={ev=>setPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-2 lg:px-11 bg-[#f2f2f2] " placeholder='Enter a password'></input><br/>
                             <label className="text-base font-semibold font-sans">Confirm password</label><br/>
                             <input value={confirmPassword} onChange={ev=>setConfirmPassword(ev.target.value)} type='password' className="text-lg my-2 font-semibold focus:outline-none font-sans rounded py-2 px-2 lg:px-11 bg-[#f2f2f2] " placeholder='Confirm your password'></input>
                             {validPassword && <div className="flex justify-center">
